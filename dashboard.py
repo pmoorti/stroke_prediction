@@ -36,6 +36,6 @@ def create_dashboard(data):
     st.plotly_chart(fig_heat)
     
 
-data = pd.read_csv('downsampled_stroke_final.csv')  # Make sure this points to your data file
+data = pd.read_csv('downsampled_stroke_final.csv') 
 create_dashboard(data)
 
