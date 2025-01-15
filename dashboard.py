@@ -21,7 +21,7 @@ def create_dashboard(data):
     # Correlation Heatmap
     st.header("Feature Correlation Heatmap")
     # Define numeric columns
-    numeric_cols = ['age', 'bmi', 'avg_glucose_level', 'stroke']
+    numeric_cols = ['age', 'bmi', 'avg_glucose_level','hypertension','heart_disease', 'stroke']
     # Calculate correlation
     correlation_matrix = data[numeric_cols].corr()
     
